@@ -9,6 +9,7 @@ Clone the repo or download with
 ```
 git clone https://github.com/juancarlosmiranda/packaging_tutorial.git
 ```
+## Install
 
 Create a virtual environment and update environment
 ```
@@ -32,13 +33,22 @@ Install the new package with:
 pip install my_package_MY_APP_NAME_HERE-0.0.1-py3-none-any.whl
 ```
 
+Example
 Execute application installed in another virtual environment with: 
 ```
 python -m my_app_name
 ```
 
+##Documentation
+```
+```
+##Bug Reports
 ```
 ```
 
+##Contribution
+Feel free to send pull requests. The develop branch should be used.
+Please rebuild, format, check code quality and run tests before submitting a pull request:
 ```
+py -m build
 ```
