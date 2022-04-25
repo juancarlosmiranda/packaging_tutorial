@@ -10,3 +10,7 @@ dist/my-package-MY_APP_NAME_HERE-0.0.1.tar.gz
 src/__pycache__/__init__.cpython-38.pyc
 src/gui_ext/__pycache__/__init__.cpython-38.pyc
 *.pyc
+src/my_package_MY_APP_NAME_HERE.egg-info/dependency_links.txt
+src/my_package_MY_APP_NAME_HERE.egg-info/PKG-INFO
+src/my_package_MY_APP_NAME_HERE.egg-info/SOURCES.txt
+src/my_package_MY_APP_NAME_HERE.egg-info/top_level.txt
