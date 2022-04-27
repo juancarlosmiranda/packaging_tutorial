@@ -1,7 +1,7 @@
 """
-Project: Fruit Size Estimation
+Project: Packaging Tutorial
 Author: Juan Carlos Miranda. https://github.com/juancarlosmiranda
-Date: February 2022
+Date: April 2022
 Description:
 
 

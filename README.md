@@ -1,4 +1,4 @@
-# README
+# README - PACKAGING TUTORIAL
 This is a simple example package based on the tutorial [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 This simple application is a [Tkinter GUI based app](https://docs.python.org/es/3/library/tkinter.html)
 
@@ -49,6 +49,4 @@ python -m my_app_name
 ##Contribution
 Feel free to send pull requests. The develop branch should be used.
 Please rebuild, format, check code quality and run tests before submitting a pull request:
-```
-py -m build
-```
+

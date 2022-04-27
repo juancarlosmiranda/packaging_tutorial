@@ -11,9 +11,7 @@ Use:
     app = GUIMyAppWindow(ui_my_app_name_config)
     app.mainloop()
 """
-import os
 import tkinter as tk
-from tkinter import filedialog
 from gui_ext.gui_app_about_window import MyAppAboutWindow
 
 
@@ -36,25 +34,6 @@ class GUIMyAppWindow(tk.Tk):
     base_path_entry = None
     load_base_path_button = None
     create_dataset_button = None
-    data_extraction_frame = None
-    data_options_frame = None
-    current_path_label = None
-    current_path_entry = None
-    select_folder_button = None
-    offset_label = None
-    offset_spinbox = None
-    number_of_frames_label = None
-    number_of_frames_spinbox = None
-    extract_folder_data_frame = None
-    input_folder_label = None
-    input_folder_entry = None
-    load_folder_button = None
-    extract_folder_button = None
-    extract_file_data_frame = None
-    input_file_label = None
-    input_file_entry = None
-    select_file_button = None
-    extract_file_button = None
     message_frame = None
     messages_label = None
     messages_info = None
@@ -110,7 +89,6 @@ class GUIMyAppWindow(tk.Tk):
         self.create_dataset_button = tk.Button(self.create_dataset_options_frame, text='New dataset',
                                                command=self.create_dataset_folder, width=self.BUTTON_WIDTH)
         self.create_dataset_button.grid(row=4, column=3, sticky=tk.W, ipadx=3, ipady=3)
-
 
         ########################################################
         # MESSAGE FRAME
@@ -169,21 +147,17 @@ class GUIMyAppWindow(tk.Tk):
     def browse_base_path(self):
         print('browse_base_path(self):')
 
-
     def create_dataset_folder(self):
         print('create_dataset_folder(self):')
 
     def browse_working_folder_data(self):
         print('browse_working_folder_data(self):')
 
-
     def select_input_folder_data(self):
         print('select_input_folder_data(self):')
 
-
     def extract_folder_data(self):
         print('extract_folder_data(self):')
-
 
     def quit_app(self):
         # ---------------------------------------------
