@@ -44,11 +44,11 @@ class MyAppHelpWindow(tk.Toplevel):
         text_info.pack(anchor=tk.CENTER)
 
         img_label = tk.Label(self)
-        assets_path = os.path.dirname(os.path.abspath(__file__))
-        img_path = os.path.join(assets_path, 'assets', 'logo_help.png')
-        img_label.image = tk.PhotoImage(file=img_path)
-        img_label['image'] = img_label.image
-        img_label.pack()
+        #assets_path = os.path.dirname(os.path.abspath(__file__))
+        #img_path = os.path.join(assets_path, 'assets', 'logo_help.png')
+        #img_label.image = tk.PhotoImage(file=img_path)
+        #img_label['image'] = img_label.image
+        #img_label.pack()
 
         buttonClose = tk.Button(self, text='Close', command=self.destroy)
         buttonClose.pack(expand=True)

@@ -29,9 +29,9 @@ class MyAppAboutWindow(tk.Toplevel):
         self.title('About...')
         self.resizable(width=False, height=False)  # do not change the size
         self.attributes('-topmost', True)
-        assets_path = os.path.dirname(os.path.abspath(__file__))
-        img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
-        self.iconphoto(False, tk.PhotoImage(file=img_path))
+        #assets_path = os.path.dirname(os.path.abspath(__file__))
+        #img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
+        #self.iconphoto(False, tk.PhotoImage(file=img_path))
 
         about_label = tk.Label(self, text=self.title_str)
         about_label.config(font=("Verdana", 12))
@@ -46,12 +46,12 @@ class MyAppAboutWindow(tk.Toplevel):
         text_info['text'] = about_text_info
         text_info.pack(anchor=tk.CENTER)
 
-        img_label = tk.Label(self)
-        assets_path = os.path.dirname(os.path.abspath(__file__))
-        img_path = os.path.join(assets_path, 'assets', 'logo_app.png')
-        img_label.image = tk.PhotoImage(file=img_path)
-        img_label['image'] = img_label.image
-        img_label.pack()
+        #img_label = tk.Label(self)
+        #assets_path = os.path.dirname(os.path.abspath(__file__))
+        #img_path = os.path.join(assets_path, 'assets', 'logo_app.png')
+        #img_label.image = tk.PhotoImage(file=img_path)
+        #img_label['image'] = img_label.image
+        #img_label.pack()
 
         buttonClose = tk.Button(self, text='Close', command=self.destroy)
         buttonClose.pack(expand=True)
