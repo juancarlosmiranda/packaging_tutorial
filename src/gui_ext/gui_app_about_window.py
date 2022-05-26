@@ -29,10 +29,11 @@ class MyAppAboutWindow(tk.Toplevel):
         self.title('About...')
         self.resizable(width=False, height=False)  # do not change the size
         self.attributes('-topmost', True)
-        #assets_path = os.path.dirname(os.path.abspath(__file__))
-        #img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
-        #self.iconphoto(False, tk.PhotoImage(file=img_path))
-
+        # -----------------------
+        assets_path = os.path.dirname(os.path.abspath(__file__))
+        img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
+        self.iconphoto(False, tk.PhotoImage(file=img_path))
+        # -----------------------
         about_label = tk.Label(self, text=self.title_str)
         about_label.config(font=("Verdana", 12))
         about_label.pack(anchor=tk.CENTER)

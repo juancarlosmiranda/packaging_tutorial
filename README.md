@@ -4,6 +4,15 @@ This simple application is a [Tkinter GUI based app](https://docs.python.org/es/
 
 ![app_example_1](https://github.com/juancarlosmiranda/packaging_tutorial/blob/main/img/app_example_1.png?raw=true)
 
+## Functionalities
+The functionalities of the software are briefly described.
+* **[Tab example]**  Tab example and Tkinter components.
+* **[Icon - assets]** Example to show an icon application.
+* **[Reading configurations]** Reading configurations from .conf files.
+* **[PIP package building]** Using Windows to produce PIP .whl file.
+* **[.EXE package building]** Using Windows + Pyinstaller to produce .EXE file.
+
+
 
 Clone the repo or download with
 ```

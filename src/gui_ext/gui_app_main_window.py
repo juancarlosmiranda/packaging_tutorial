@@ -61,9 +61,9 @@ class GUIMyAppWindow(tk.Tk):
         self.attributes('-topmost', True)
         self.state('zoomed')
         # ---------------------------
-        #assets_path = os.path.dirname(os.path.abspath(__file__))
-        #img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
-        #self.iconphoto(False, tk.PhotoImage(file=img_path))
+        assets_path = os.path.dirname(os.path.abspath(__file__))
+        img_path = os.path.join(assets_path, 'assets', 'icon_app.png')
+        self.iconphoto(False, tk.PhotoImage(file=img_path))
         # ---------------------------
         self.create_tabs()
         self.create_widgets()
