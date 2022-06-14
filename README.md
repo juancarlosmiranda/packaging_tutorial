@@ -48,6 +48,18 @@ Execute application installed in another virtual environment with:
 python -m my_app_name
 ```
 
+Upload with
+```
+pip install twine
+twine upload ./dist/*
+```
+Upload for testing packages.
+
+```
+py -m twine upload --repository testpypi dist/*
+```
+
+
 ##Documentation
 ```
 ```
