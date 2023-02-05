@@ -52,6 +52,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=PATH+SRC_FOLDER+'/'+GUI_ASSETS+'/'+ASSETS_FOLDER+'/'+'icon_app.png'
 )
 coll = COLLECT(
     exe,

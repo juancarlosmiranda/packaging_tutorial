@@ -46,7 +46,6 @@ REM pyinstaller win_exe_conf/__main__.spec ./src/packaging_tutorial/__main__.py 
 
 pyinstaller %WIN_EXE_CONF%/__main__.spec ./%SRC_FOLDER%/%PROJECT_NAME%/__main__.py -y
 
-
 ECHO ---------------------
 ECHO COPYING CONFIGURATION FILES/
 ECHO ---------------------
