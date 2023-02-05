@@ -34,6 +34,7 @@ Windows systems
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv ./packaging_tutorial_venv
 packaging_tutorial_venv\Scripts\activate.bat
 pip install --upgrade pip
+pip install --upgrade build
 pip install -r requirements_windows.txt
 ```
 

@@ -1,21 +1,22 @@
 @ echo off
-SET APPLICATION_FOLDER_MAIN=packaging_tutorial
-SET APPLICATION_FOLDER_OUT=packaging_tutorial_f
-SET APPLICATION_PATH=%~dp0
+REM Project: packaging_tutorial
+REM
+REM  Github repository: https://github.com/juancarlosmiranda/packaging_tutorial
+REM  Author: Juan Carlos Miranda
+REM  https://juancarlosmiranda.github.io/
+REM  https://github.com/juancarlosmiranda
+REM
 
+SET PROJECT_NAME=packaging_tutorial
+SET DIST_FOLDER=dist
 
-SET CONF_NAME=*.conf
-SET PAHT_FOLDER_RELATIVE_CONF=src\%APPLICATION_FOLDER_MAIN%\conf\
-SET PATH_CONF_FILE=%APPLICATION_PATH%%PAHT_FOLDER_RELATIVE_CONF%%CONF_NAME%
-SET DESTINATION_FOLDER_RELATIVE_CONF=dist\%APPLICATION_FOLDER_OUT%\conf
-SET DESTINATION_FOLDER_ABSOLUTE_CONF=%APPLICATION_PATH%%DESTINATION_FOLDER_RELATIVE_CONF%
-
-SET DESTINATION_FOLDER_RELATIVE_CONF=dist\%APPLICATION_FOLDER_OUT%\conf
-SET DESTINATION_FOLDER_ABSOLUTE_CONF=%APPLICATION_PATH%%DESTINATION_FOLDER_RELATIVE_CONF%
-
-
-ECHO %APPLICATION_PATH%
-ECHO %PATH_CONF_FILE%
-ECHO %DESTINATION_FOLDER_ABSOLUTE%
-ECHO 'pip package is OK -- /dist/my_package_MY_APP_NAME_HERE-0.0.1-py3-none-any.whl'
+ECHO ---------------------
+ECHO CREATING PACKAGE
+ECHO ---------------------
+ECHO PROJECT_NAME=%PROJECT_NAME%
+ECHO 'pip package is OK -- '/%DIST_FOLDER%/my_package_MY_APP_NAME_HERE-0.0.1-py3-none-any.whl
+ECHO ---------------------
+ECHO INSTALL PACKAGE WITH
+ECHO ---------------------
+ECHO 'pip install my_package_MY_APP_NAME_HERE-0.0.1-py3-none-any.whl'
 py -m build
