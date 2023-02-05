@@ -23,11 +23,20 @@ git clone https://github.com/juancarlosmiranda/packaging_tutorial.git
 Create a virtual environment and update environment
 ```
 python3 -m venv ./packaging_tutorial
-source ./packaging_tutorial-venv/bin/activate
+source ./packaging_tutorial_venv/bin/activate
 py -m pip install --upgrade pip
 py -m pip install --upgrade build
 pip install -r requirements_linux.txt
 ```
+
+Windows systems
+```
+%userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv ./packaging_tutorial_venv
+packaging_tutorial_venv\Scripts\activate.bat
+pip install --upgrade pip
+pip install -r requirements_windows.txt
+```
+
 
 Build package, run this command in the same directory where "pyproject.toml" is located:
 ```

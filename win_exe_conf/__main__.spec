@@ -1,19 +1,26 @@
 # -*- mode: python ; coding: utf-8 -*-
 block_cipher = None
 
-PATH = 'C:/Users/Usuari/Documents/GitHub/packaging_tutorial/'
-PATH_FOLDER = 'package_tutorial'
-EXECUTABLE_NAME = 'package_tutorial_ex'
+PATH = 'C:/Users/Usuari/development/packaging_tutorial/'
+
+PROJECT_NAME='packaging_tutorial'
+PROJECT_NAME_OUT = 'packaging_tutorial_f'
+SRC_FOLDER='src'
+CONF_FOLDER='conf'
+GUI_ASSETS='gui_ext'
+ASSETS_FOLDER='assets'
+
+EXECUTABLE_NAME = 'packaging_tutorial_ex'
 EXECUTABLE_VERSION_NUMBER = '_0.0.1'
 
 a = Analysis(
-    [ PATH+'src/my_app_name/__main__.py' ],
+    [ PATH+'/'+SRC_FOLDER+'/'+PROJECT_NAME+'/'+'__main__.py' ],
     pathex=[
-        PATH+'src',
-        PATH+'src/my_app_name/',
-        PATH+'src/my_app_name/conf/',
-        PATH+'src/gui_ext/',
-        PATH+'src/gui_ext/assets'
+        PATH+SRC_FOLDER,
+        PATH+SRC_FOLDER+'/'+PROJECT_NAME+'/',
+        PATH+SRC_FOLDER+PROJECT_NAME+'/'+CONF_FOLDER+'/',
+        PATH+SRC_FOLDER+'/'+GUI_ASSETS+'/',
+        PATH+SRC_FOLDER+'/'+GUI_ASSETS+'/'+ASSETS_FOLDER
         ],
     binaries=[],
     datas=[],
@@ -54,5 +61,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name=PATH_FOLDER, # YOUR EXECUTABLE FOLDER HERE
+    name=PROJECT_NAME_OUT, # YOUR EXECUTABLE FOLDER HERE
 )
