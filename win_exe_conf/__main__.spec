@@ -1,6 +1,6 @@
 # -*- mode: python ; coding: utf-8 -*-
 block_cipher = None
-
+#todo: change automatically the user path
 PATH = 'C:/Users/Usuari/development/packaging_tutorial/'
 
 PROJECT_NAME='packaging_tutorial'

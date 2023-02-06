@@ -9,10 +9,11 @@ The functionalities of the software are briefly described.
 * **[Tab example]**  Tab example and Tkinter components.
 * **[Icon - assets]** Example to show an icon application.
 * **[Reading configurations]** Reading configurations from .conf files.
+
+## Requirements
 * **[PIP package building]** Using Windows to produce PIP .whl file.
 * **[.EXE package building]** Using Windows + Pyinstaller to produce .EXE file.
-
-
+* **[7-Zip](https://www.7-zip.org/download.html)** To compress installer.
 
 Clone the repo or download with
 Install Git in your system.

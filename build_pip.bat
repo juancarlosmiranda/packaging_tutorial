@@ -18,5 +18,7 @@ ECHO 'pip package is OK -- '/%DIST_FOLDER%/my_package_MY_APP_NAME_HERE-0.0.1-py3
 ECHO ---------------------
 ECHO INSTALL PACKAGE WITH
 ECHO ---------------------
+rem https://packaging.python.org/en/latest/tutorials/packaging-projects/
 ECHO 'pip install my_package_MY_APP_NAME_HERE-0.0.1-py3-none-any.whl'
-py -m build
+rem py -m build
+python -m build
