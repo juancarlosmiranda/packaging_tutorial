@@ -12,8 +12,11 @@ Description:
 Use:
 
 """
-
+import os
 from os.path import expanduser
+import sys
+sys.path.append(os.path.join(os.path.abspath('.'), 'src'))
+
 from src.gui_ext.gui_frame_ext_config import GUIMyAppNameConfig
 from src.gui_ext.gui_app_main_window import GUIMyAppWindow
 from src.helpers.helper_filesystem import *

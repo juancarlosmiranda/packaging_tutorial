@@ -15,12 +15,14 @@ The functionalities of the software are briefly described.
 
 
 Clone the repo or download with
+Install Git in your system.
 ```
 git clone https://github.com/juancarlosmiranda/packaging_tutorial.git
 ```
 ## Install
 
-Create a virtual environment and update environment
+Create a virtual environment and update environment. Windows [Github Desktop](https://desktop.github.com/)
+
 ```
 python3 -m venv ./packaging_tutorial
 source ./packaging_tutorial_venv/bin/activate
@@ -30,11 +32,14 @@ pip install -r requirements_linux.txt
 ```
 
 Windows systems
+
 ```
 %userprofile%"\AppData\Local\Programs\Python\Python38\python.exe" -m venv ./packaging_tutorial_venv
 packaging_tutorial_venv\Scripts\activate.bat
-pip install --upgrade pip
-pip install --upgrade build
+
+python -m venv ./packaging_tutorial_venv
+python.exe -m pip install --upgrade pip
+python.exe -m pip install --upgrade build
 pip install -r requirements_windows.txt
 ```
 
