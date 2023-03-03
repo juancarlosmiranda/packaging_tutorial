@@ -44,7 +44,7 @@ python.exe -m pip install --upgrade build
 pip install -r requirements_windows.txt
 ```
 
-
+To create a packaging Python project follow [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
 Build package, run this command in the same directory where "pyproject.toml" is located:
 ```
 py -m build
@@ -68,6 +68,7 @@ Upload with
 ```
 pip install twine
 twine upload ./dist/*
+twine upload ./dist/* --verbose
 ```
 Upload for testing packages.
 
